@@ -1,6 +1,3 @@
-
-
-
 def itoa(N):
     flag = 0
     if N < 0:
