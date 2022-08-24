@@ -9,14 +9,15 @@ def backtracking(N, idx, tmp):
     if idx == N:                        # 모든 행이 다 더해지면
         total = min(total, tmp)         # 작은값 찾기
 
+
     for i in range(N):                  # 열의 갯수만큼
         if visited[i] == 0:             # 방문 안한 열 체크
             print(board[idx][i], tmp)
-            tmp += board[idx][i]        # tmp에 추가
+            # tmp += board[idx][i]        # tmp에 추가
             visited[i] = 1              # 표시
-            backtracking(N, idx+1, tmp) # 재귀. 다음 행으로 내려가서
+            backtracking(N, idx+1, tmp+board[idx][i]) # 재귀. 다음 행으로 내려가서
             visited[i] = 0              # 다시 돌려주고
-            tmp -= board[idx][i]        # 0으로 만들어주기
+            # tmp -= board[idx][i]        # 0으로 만들어주기
 
 
 T = int(input())

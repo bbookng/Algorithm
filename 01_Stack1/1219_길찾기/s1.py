@@ -7,6 +7,8 @@ def dfs(now):
         if not visited[nxt]:        # 만약 방문 안했다면
             dfs(nxt)                # 더 탐색
 
+
+
 for tc in range(1, 11):
     T, E = map(int, input().split())
     arr = list(map(int, input().split()))
