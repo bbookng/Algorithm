@@ -1,3 +1,7 @@
+import sys
+sys.stdin = open('9489.txt')
+
+
 T = int(input())
 
 def sol(n, m, arr):
