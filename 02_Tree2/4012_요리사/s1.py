@@ -4,10 +4,6 @@ from itertools import combinations
 
 def solution():
     result = 0
-    for i in combi:
-        for j in i:
-
-
 
 
 T = int(input())

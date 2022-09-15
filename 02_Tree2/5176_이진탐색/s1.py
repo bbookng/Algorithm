@@ -9,8 +9,6 @@ def inorder(n):
         cnt += 1
         inorder(2 * n + 1)
 
-
-
 T = int(input())
 for tc in range(1, T+1):
     N = int(input())
