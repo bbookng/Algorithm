@@ -1,2 +1,6 @@
-a = [1, 2, 1, 3, 4, 5]
-print(a.count(max(a, key=lambda x: a.count(x))))
+import sys
+input = sys.stdin.readline
+
+N = int(input())
+arr = list(map(int, input().split()) for _ in range(N))
+
