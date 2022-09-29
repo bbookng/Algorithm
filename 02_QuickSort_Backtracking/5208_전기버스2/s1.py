@@ -19,7 +19,7 @@ for tc in range(1, T+1):
     N, *battery = map(int, input().split())
     result = float('inf')
 
-    Backtracking(0, -1)                         # 출발지에서는 count 를 안하기 때문에 -1로 시작
+    Backtracking(0, -1)                       # 출발지에서는 count 를 안하기 때문에 -1로 시작
 
     print(f'#{tc} {result}')
 
